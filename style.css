@@ -1,21 +1,32 @@
 *{box-sizing:border-box}
 body{margin:0;background:#000;color:#fff;font-family:Helvetica,Arial,sans-serif}
 a{color:inherit}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#111;border-bottom:2px solid #d4af37;flex-wrap:wrap;gap:10px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:#111;border-bottom:2px solid #d4af37;flex-wrap:wrap;gap:10px}
 .nav a{text-decoration:none;font-size:13px;letter-spacing:.08em}
 .nav .active{background:#d4af37;color:#111;padding:5px 11px;font-weight:800}
-.hero{background:#111;border-bottom:1px solid #333;padding:32px 20px 44px;clip-path:polygon(0 0,100% 0,100% 88%,0 100%)}
-.hero-inner{max-width:980px;margin:0 auto;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.hero{background:#111;border-bottom:1px solid #333;padding:32px 16px 44px;clip-path:polygon(0 0,100% 0,100% 88%,0 100%)}
+.hero-inner{max-width:none;width:100%;margin:0;display:flex;gap:24px;align-items:center;flex-wrap:wrap;justify-content:space-between}
 .eyebrow{font-size:11px;letter-spacing:.2em;color:#d4af37;font-weight:800;margin:0}
 h1{font-size:56px;line-height:1;margin:12px 0 10px;font-weight:900;letter-spacing:.02em;text-transform:uppercase}
 h2{font-size:22px;text-transform:uppercase;letter-spacing:.08em}
 p{color:#aaa;line-height:1.6;font-size:14px}
 .btn{display:inline-block;background:#d4af37;color:#111;padding:11px 18px;font-size:13px;font-weight:800;letter-spacing:.08em;text-decoration:none}
 .btn-line{display:inline-block;border:1px solid #fff;color:#fff;padding:11px 18px;font-size:13px;font-weight:800;letter-spacing:.08em;text-decoration:none}
-.wrap{max-width:980px;margin:0 auto;padding:24px 20px}
+.wrap{max-width:none;width:100%;margin:0;padding:24px 16px}
 .card{background:#111;border:1px solid #333;border-left:3px solid #d4af37;padding:14px}
 .card h3{margin:0 0 6px;font-size:13px;letter-spacing:.12em;color:#d4af37;text-transform:uppercase}
 .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.tile{display:block;text-decoration:none;background:#111;border:1px solid #333;border-left:3px solid #d4af37;padding:16px;transition:background .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease,opacity .18s ease}
+.tile:hover,.tile:active{background:#1c1c1c;border-color:#d4af37;transform:translateY(-3px);box-shadow:6px 6px 0 #d4af37;opacity:1}
+.tile .num{font-size:32px;font-weight:900;line-height:1;color:#fff}
+.tile .status{display:inline-block;font-size:11px;letter-spacing:.12em;font-weight:800;padding:4px 8px;margin:8px 0}
+.tile .status.current{background:#d4af37;color:#111}
+.tile .status.todo{background:#222;color:#aaa;border:1px solid #333}
+.tile h3{margin:8px 0 6px;font-size:14px;letter-spacing:.1em;color:#d4af37;text-transform:uppercase}
+.tile p{margin:0 0 8px}
+.tile .inside{font-size:12px;color:#888;line-height:1.6}
+.tile .arrow{margin-top:12px;font-size:13px;font-weight:800;letter-spacing:.08em;color:#fff;transition:transform .18s ease}
+.tile:hover .arrow{transform:translateX(4px);color:#d4af37}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .grey{color:#aaa;font-size:12px}
 footer{border-top:1px solid #333;padding:18px 20px;color:#888;font-size:12px;text-align:center}
