@@ -1,5 +1,5 @@
 *{box-sizing:border-box}
-body{margin:0;background:#000;color:#fff;font-family:Helvetica,Arial,sans-serif}
+html{scroll-behavior:smooth} body{margin:0;background:#000;color:#fff;font-family:Helvetica,Arial,sans-serif}
 a{color:inherit}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:#111;border-bottom:2px solid #d4af37;flex-wrap:wrap;gap:10px}
 .nav a{text-decoration:none;font-size:13px;letter-spacing:.08em}
@@ -12,7 +12,7 @@ h2{font-size:22px;text-transform:uppercase;letter-spacing:.08em}
 p{color:#aaa;line-height:1.6;font-size:14px}
 .btn{display:inline-block;background:#d4af37;color:#111;padding:11px 18px;font-size:13px;font-weight:800;letter-spacing:.08em;text-decoration:none}
 .btn-line{display:inline-block;border:1px solid #fff;color:#fff;padding:11px 18px;font-size:13px;font-weight:800;letter-spacing:.08em;text-decoration:none}
-.wrap{max-width:none;width:100%;margin:0;padding:24px 16px}
+section{scroll-margin-top:20px} .wrap{max-width:none;width:100%;margin:0;padding:24px 16px}
 .card{background:#111;border:1px solid #333;border-left:3px solid #d4af37;padding:14px}
 .card h3{margin:0 0 6px;font-size:13px;letter-spacing:.12em;color:#d4af37;text-transform:uppercase}
 .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
